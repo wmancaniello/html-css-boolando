@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* LAYOUT AND FLEX RULES */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+  
+    /* debug */
+    border: 5px dashed black;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    width: calc(100% / 3);
+    padding: 10px;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+
+  /* DETAILS CARD */
+
+  .heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 50px;
+
+    padding: 15px;
+    background-color: white;
+  }
+
+  .sale {
+    position: absolute;
+    bottom: 3.125em;
+    left: 0;
+    font-size: 0.9375em;
+  
+    padding: 5px;
+    background-color: red;
+    color: white;
+  }
+
+  .green-det {
+    position: absolute;
+    bottom: 3.125em;
+    left: 3.125em;
+    font-size: 0.9375em;
+  
+    padding: 5px;
+    background-color: green;
+    color: white;
+  }
+
+  .green-det2 {
+    position: absolute;
+    bottom: 3.125em;
+    left: 0;
+    font-size: 0.9375em;
+  
+    padding: 5px;
+    background-color: green;
+    color: white;
+  }
+  
+
+    /* HOVER */
+  
+    .heart:hover {
+        display: inline-block;
+        color: red;
+    }
+
+  
+
+
+
+
+
+
+    /* DEBUG NAV */
+    nav{
+
+        /* debug */
+        text-align: center;
+        height: 80px;
+        background-color: red;
+        margin-bottom: 50px;
+    }
