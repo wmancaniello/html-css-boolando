@@ -2,20 +2,112 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
   
-  img {
+  main img {
     max-width: 100%;
   }
+
+  /* TEXT RULES */
+  .barred{
+    text-decoration: line-through;
+  }
+
+  .red {
+    color: red;
+    font-weight: 900;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+
+  /* HEADER */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav-container{
+        
+    /* debug */
+    height: 20px;
+    background-color: #FF6900;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    }
+
+    .nav-main {
+        display: flex;
+        padding-top: 20px;
+
+        /* debug */
+        margin-left: 20%;
+        width: 60%;
+        /* background-color: red; */
+    }
+
+    .gender {
+        height: 50px;
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        /* debug */
+        /* border: 3px dashed black; */
+    }
+
+    .logo {
+
+        height: 50px;
+        width: 50%;
+        background-image: url(../img/boolean-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        /* debug */
+        /* border: 3px dashed black; */
+    }
+
+    .icons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        height: 50px;
+        width: 25%;
+
+        /* debug */
+        /* border: 3px dashed black; */
+    }
+
+    a  {
+        text-decoration: none;
+        color: white;
+    }   
+
+    i{
+     color: white;
+    }
+
   
   /* LAYOUT AND FLEX RULES */
   .container {
     width: 80%;
     margin: 0 auto;
+    margin-top: 150px;
     max-width: 1500px;
   
     /* debug */
-    border: 5px dashed black;
+    /* border: 5px dashed black; */
   }
   
   .flex {
@@ -80,25 +172,88 @@
   
 
     /* HOVER */
-  
+
     .heart:hover {
         display: inline-block;
         color: red;
     }
 
-  
+    /* IMMAGINI SECONDARIE */
+    .card.one:hover {
+    
+        background-image: url(../img/1b.webp);
+        background-size: cover;
+    }
+
+    .card.two:hover {
+    
+        background-image: url(../img/2b.webp);
+        background-size: cover;
+    }
+
+    .card.three:hover {
+    
+        background-image: url(../img/3b.webp);
+        background-size: cover;
+    }
+
+    .card.four:hover {
+    
+        background-image: url(../img/4b.webp);
+        background-size: cover;
+    }
+
+    .card.five:hover {
+    
+        background-image: url(../img/5b.webp);
+        background-size: cover;
+    }
+
+    .card.six:hover {
+    
+        background-image: url(../img/6b.webp);
+        background-size: cover;
+    }
+
+    /* NASCONDERE IMG PRINCIPALE */
+    .card:hover img {
+        visibility: hidden;
+    }
+
+
+    
 
 
 
 
+    /* DEBUG FOOTER */
+    
+    footer{
+
+        min-height: 80px;
+        margin-top: 40px;
+        padding-top: 20px;
+        background-color: black;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
 
 
-    /* DEBUG NAV */
-    nav{
+    .left-text {
+        color: white;
 
         /* debug */
-        text-align: center;
-        height: 80px;
-        background-color: red;
-        margin-bottom: 50px;
+        /* background-color: red; */
+        /* width: 25%; */
     }
+
+    .right-text {
+
+        color: white;
+        /* debug */
+        /* background-color: aqua; */
+        /* width: 25%; */
+        }
